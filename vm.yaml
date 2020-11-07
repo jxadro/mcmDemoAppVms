@@ -1,0 +1,11 @@
+apiVersion: infra.management.ibm.com/v1alpha1
+kind: VirtualMachine
+metadata:
+  finalizers:
+    - virtualmachine.infra.management.ibm.com
+  name: oracle-vm
+  namespace: default
+spec:
+  cfConnection:
+    name: 'conn1'
+  vmid: '26'
